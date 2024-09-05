@@ -1,0 +1,428 @@
+
+/* DEV STARTS */
+.position-segment{
+  /* border: 1px solid magenta; */
+}
+h2{
+  font-size: 2em;
+  font-family: Roboto;
+  color: floralwhite;
+  background-color: black;
+  text-align: center;
+  width: 100%;
+}
+.in-id{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: magenta;
+}
+#counter{
+  position: sticky;
+  top: 0;
+  left: 0;
+  color: black;
+  font-size: 20px;
+  background-color: white;
+  padding: 5px;
+  z-index: 1000;
+  width: 100px;
+  height: 50px;
+}
+
+#controlsContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 16px;
+  font-family: Roboto;
+}
+#controlsContainer div{
+  margin-left: 1%;
+  margin-right: 1%;
+}
+#cameraDiv{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 16px;
+}
+#cameraDiv div{
+  padding: 1%;
+} 
+
+.box{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 800px;
+  width: 500px;
+  border:1px solid black;
+}
+label {
+  text-align: right;
+  clear: both;
+  float:left;
+  margin-right:15px;
+}
+#logInfo{
+  position: sticky;
+  top: 0;
+  left: 0;
+  color: black;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.569);
+  padding: 5px;
+  z-index: 1000;
+  width: 50%;
+  height: 33vh;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+/* DEV ENDS */
+body {
+  margin: 0;
+  background-color: black;
+}
+div{
+  overflow-x: hidden;
+}
+#mainContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Content */
+#contentContainer{
+  position: relative;
+  z-index: 10;
+}
+#bluredContainer{
+  position: absolute;
+  top: 0.5%;
+  left: 5%;
+  height: 90vh;
+  width: 90%;
+  background-size: contain;
+  opacity: 0.8;
+  filter: blur(100px);
+  background: #283048;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #859398, #283048); 
+
+}
+#initialMessageContainer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:floralwhite;
+  
+}
+#marcelo{
+  font-family: poster-gothic-atf, sans-serif;
+  font-size: 80px;
+  font-weight: 800;
+  z-index: 10;
+  font-size: 14em;
+  margin-top: 0;
+}
+#profession{
+  font-family: xenera, sans-serif;
+  font-size: 5vw;
+}
+/* Content Positions */
+.position-segment{
+  height: 100vh;
+  width: 100%;
+  margin: 200px 0px;
+  z-index: 8;
+  position: relative;
+  border: 2px solid magenta;
+}
+
+#pos1{
+  font-family: xenera, sans-serif;
+  position: relative;
+  margin-bottom: 1%;
+}
+
+#pos2{
+    margin-top: 1%;
+}
+#introContainer{
+  font-size: 8em;
+  padding: 1%;
+  height: 100%;
+  color:floralwhite;
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  opacity: 0;
+}
+.content-title{
+  font-size: 1.5em;
+  font-family:poster-gothic-atf, sans-serif;
+}
+#intro1{
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 4; 
+  writing-mode: initial;
+  text-orientation: initial;
+  font-size: 1em;
+  font-family:poster-gothic-atf, sans-serif;
+}
+#intro2{
+  grid-row: 1 / 4;
+  grid-column: 1/ 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10%;
+  font-size: 25%;
+  
+}
+#tools{
+  grid-row: 1 / 4;
+  grid-column: 1/ 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10%;
+  font-size: 25%;
+  
+}
+
+#openHire{
+  font-style: italic;
+  font-size: 26px;
+  margin-top: 5%;
+}
+#openHire a{
+  text-decoration: solid underline 2px white;
+  color: white;
+}
+/*  */
+#pos3{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#typeOfWork{
+  width: 66.6%;
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+}
+.content-t{
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  font-weight: 500;
+  font-family: xenera, sans-serif;
+  padding: 2.5%;
+  background-color: #39393bad;
+  border-radius: 5%;
+  color:floralwhite;
+}
+#shopifyLogo{
+  width: 33.3%;
+  height: auto;
+}
+/*  */
+#pos4, #pos5, #pos6{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.images-container{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0;
+  margin-top: 15%
+}
+#toolBeltContainer{
+  opacity: 0;
+}
+#formContainer{
+  opacity: 0;
+  margin-top: 15%;
+}
+.images-container img{
+  width: 33%;
+}
+
+#pos5 img{
+  margin: 1% 4%;
+}
+#pos6 img{
+  margin: 5%;
+}
+
+.content-title{
+  width: 100%;
+  text-align: center;
+  font-size: 6vw;
+}
+.medium-logo-img {
+  width: 30%;
+  height: auto;
+  padding-right: 5px !important;
+  vertical-align: middle !important;
+  fill: #F66035 !important;
+  color: #F66035 !important;
+  -webkit-transition: all .3s ease-out !important;
+  transition: all .3s ease-out !important;
+}
+
+.logo-st0 {
+  fill: #F66035;
+}
+.logo-st1 {
+  fill: #FFFFFF;
+}
+.g-brand-logo.cc-dark {
+  color: #fff;
+}
+#toolbetlLi span{
+  font-style: italic;
+  font-size: 20px;
+}
+
+#toolBeltContainer{
+  font-size: 8em;
+  padding: 1%;
+  height: 100%;
+  color:floralwhite;
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 26%;
+}
+#formContainer{
+  font-size: 8em;
+  padding: 1%;
+  height: 100%;
+  color:floralwhite;
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+#contact, #messageConfirmation{
+  grid-row: 1 / 4;
+  grid-column: 1/ 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10%;
+  font-size: 25%;
+}
+footer{
+  position: relative;
+  bottom: 0;
+  background-color: black;
+  width: 100%;
+  height: 55px;
+  overflow-x: hidden;
+}
+input, textarea{
+  width: 80%;
+  padding: 5%;
+  margin: 2.5%;
+  font-size: 20px;
+}
+
+button{
+  padding: 5%;
+  font-size: 25px;
+  width: 50%;
+}
+
+#pos10{
+  color: floralwhite
+}
+
+#pos8{
+  height: 100px !important;
+  position: relative;
+  
+}
+
+/* resoponsive styles for mobile */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #bluredContainer {
+    filter: blur(30px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+  #marcelo{
+    font-size: 5em;
+  }
+  #intro2{
+    grid-row: 2 / 4;
+    grid-column: 1/ 8;
+    padding: 5%;
+    font-size: 5vw;
+    margin-top: 55%;
+  }
+  #typeOfWork{
+    width: 80%;
+    font-size: 5vw;
+  }
+  .content-title{
+    font-size: 9vw;
+  }
+  .position-segment{
+    min-height: 250px;
+  }
+  #pos4{
+    min-height: 50px;
+  }
+  #pos6{
+    margin-top: 300px;
+  }
+  .images-container{
+    flex-direction: column;
+    margin-top: 50%;
+  }
+  .images-container img{
+    width: 70%;
+    padding: 5%;
+  }
+
+  #tools{
+    grid-column: 1/ 8;
+  }
+  #pos9{
+    margin-bottom: 50px;
+  }
+  #contact{
+    grid-column: 1/ 8;
+  }
+  #toolBeltContainer{
+    margin-top: 40%;
+  }
+}
+
+#messageConfirmation{
+  display: none
+}
+
